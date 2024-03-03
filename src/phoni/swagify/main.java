@@ -24,7 +24,7 @@ public class main extends BaseModPlugin
 
 
         string_target_pair.put("target", "portraits");
-        string_target_pair.put("replacement", "swag_portraits");
+        string_target_pair.put("replacement", "phoni/swagify/portraits");
 
 
         substring_index_pair.put(
