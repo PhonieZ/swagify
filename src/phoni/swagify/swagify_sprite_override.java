@@ -17,7 +17,7 @@ import phoni.swagify.utils.character;
 
 public class swagify_sprite_override extends BaseModPlugin 
 {   
-    static void swagify_init()
+    static void swagify_init(boolean should_swagify_characters)
     {
         List<PersonDataAPI> important_character_wrapper_list = Global.getSector().getImportantPeople().getPeopleCopy();
         PersonAPI player_object = Global.getSector().getCharacterData().getPerson();
@@ -28,6 +28,15 @@ public class swagify_sprite_override extends BaseModPlugin
 
 
         Dictionary<String, PersonAPI> character_object_dict = character.object_list_to_dict(character_object_list);
+
+
+
+        Dictionary<String,String> string_target_pair = swagify_config.SWAG_STRING_TARGET_PAIR;
+
+        if (!should_swagify_characters)
+        {
+            string_target_pair = swagify_config.DESWAG_STRING_TARGET_PAIR;
+        }
 
 
 
@@ -45,12 +54,12 @@ public class swagify_sprite_override extends BaseModPlugin
             
             if (current_swag_character.equals(swagify_config.ALL_PLAYERS))
             {
-                swagify_character(player_object, swagify_config.SWAG_STRING_TARGET_PAIR);
+                swagify_character(player_object, string_target_pair);
             }
 
             else if (current_swag_character_object != null)
             {   
-                swagify_character(current_swag_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
+                swagify_character(current_swag_character_object, string_target_pair);
             }
         }
     }
@@ -114,6 +123,25 @@ public class swagify_sprite_override extends BaseModPlugin
     @Override
     public void onGameLoad(boolean newGame)
     {
-        swagify_init();
+        swagify_init(true);
+    }
+
+    @Override
+    public void afterGameSave()
+    {
+        if (!swagify_config.is_sprite_change_permanent)
+        {
+            swagify_init(true);
+        }
+    }
+
+
+    @Override
+    public void beforeGameSave()
+    {
+        if (!swagify_config.is_sprite_change_permanent)
+        {
+            swagify_init(false);
+        }
     }
 }
