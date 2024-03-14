@@ -31,35 +31,42 @@ public class swagify_sprite_override extends BaseModPlugin
 
 
 
-        Dictionary<String,String> string_target_pair = swagify_config.SWAG_STRING_TARGET_PAIR;
+        
 
         if (!should_swagify_characters)
         {
-            string_target_pair = swagify_config.DESWAG_STRING_TARGET_PAIR;
+            for (PersonAPI current_character_object : character_object_list)
+            {
+                swagify_character(current_character_object, swagify_config.DESWAG_STRING_TARGET_PAIR);
+            }
         }
 
 
 
-        Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
 
-        String current_swag_character;
-        PersonAPI current_swag_character_object;
+        else
+        {
+            Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
 
-
-        while (swag_characters_iterator.hasNext()) 
-        {   
-            current_swag_character = swag_characters_iterator.next();
-            current_swag_character_object = character_object_dict.get(current_swag_character);
-            
-            
-            if (current_swag_character.equals(swagify_config.ALL_PLAYERS))
-            {
-                swagify_character(player_object, string_target_pair);
-            }
-
-            else if (current_swag_character_object != null)
+            String current_swag_character;
+            PersonAPI current_swag_character_object;
+    
+    
+            while (swag_characters_iterator.hasNext()) 
             {   
-                swagify_character(current_swag_character_object, string_target_pair);
+                current_swag_character = swag_characters_iterator.next();
+                current_swag_character_object = character_object_dict.get(current_swag_character);
+                
+                
+                if (current_swag_character.equals(swagify_config.ALL_PLAYERS))
+                {
+                    swagify_character(player_object, swagify_config.SWAG_STRING_TARGET_PAIR);
+                }
+    
+                else if (current_swag_character_object != null)
+                {   
+                    swagify_character(current_swag_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
+                }
             }
         }
     }
