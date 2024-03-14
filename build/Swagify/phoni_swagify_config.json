@@ -1,8 +1,12 @@
 {
+    #Set To true To De-Swag all Character Portraits Upon Mod Removal, Set To false To Leave Changes In (No Undoing Anything)
     "is_sprite_change_permanent": false,
+
+    #To Swagify A Select Character, Put In Their Character ID (Formatted "firstname_lastname", All Lowercase, For Example Alviss Sebestyen Becomes "alviss_sebestyen", )
+    # "all_players", Makes All Player Portraits Swag, Otherwise Just Put In The Name Of Your Character If You Want Just Them To Be Swag
     "swag_characters":
     [
         "all_players",
-        "alviss_sebestyen"
+        "alviss_sebestyen",
     ]
 }
