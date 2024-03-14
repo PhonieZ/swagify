@@ -58,7 +58,7 @@ public class swagify_sprite_override extends BaseModPlugin
 
 
 
-    static void swagify_character(PersonAPI character_object)
+    static void swagify_character(PersonAPI character_object, Dictionary<String, String> string_target_pair)
     {   
         StringBuilder string_builder = new StringBuilder();
 
@@ -67,12 +67,7 @@ public class swagify_sprite_override extends BaseModPlugin
         String swag_character_sprite_pointer;
 
 
-        Dictionary<String, String> string_target_pair = new Hashtable<>();
         Dictionary<String, Integer> substring_index_pair = new Hashtable<>();
-
-
-        string_target_pair.put("target", "graphics");
-        string_target_pair.put("replacement", "graphics/phoni/swagify");
 
 
         substring_index_pair.put(
