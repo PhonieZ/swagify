@@ -7,7 +7,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.Dictionary;
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Set;
 
 
@@ -17,6 +19,22 @@ public class swagify_config
 {   
     public static final String SEPARATOR = "_";
     public static final String ALL_PLAYERS = "all_players";
+
+
+    public static final Dictionary<String, String> SWAG_STRING_TARGET_PAIR = new Hashtable<>();
+    static
+    {
+        SWAG_STRING_TARGET_PAIR.put("target", "graphics");
+        SWAG_STRING_TARGET_PAIR.put("replacement", "graphics/phoni/swagify");
+    }
+
+    public static final Dictionary<String, String> DESWAG_STRING_TARGET_PAIR = new Hashtable<>();
+    static
+    {
+        DESWAG_STRING_TARGET_PAIR.put("target", "graphics/phoni/swagify");
+        DESWAG_STRING_TARGET_PAIR.put("replacement", "graphics");
+    }
+
 
     public static final String CONFIG_FILE = "phoni_swagify_config.json";
 
