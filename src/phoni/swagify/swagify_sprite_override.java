@@ -45,12 +45,12 @@ public class swagify_sprite_override extends BaseModPlugin
             
             if (current_swag_character.equals(swagify_config.ALL_PLAYERS))
             {
-                swagify_character(player_object);
+                swagify_character(player_object, swagify_config.SWAG_STRING_TARGET_PAIR);
             }
 
             else if (current_swag_character_object != null)
             {   
-                swagify_character(current_swag_character_object);
+                swagify_character(current_swag_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
             }
         }
     }
