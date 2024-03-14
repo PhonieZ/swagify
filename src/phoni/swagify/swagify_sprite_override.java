@@ -16,6 +16,47 @@ import java.util.List;
 
 public class swagify_sprite_override extends BaseModPlugin 
 {   
+    static void swagify_init()
+    {
+        List<PersonDataAPI> important_character_wrapper_list = Global.getSector().getImportantPeople().getPeopleCopy();
+        PersonAPI player_object = Global.getSector().getCharacterData().getPerson();
+
+
+        List<PersonAPI> character_object_list = character_wrapper_list_to_object_list(important_character_wrapper_list);
+        character_object_list.add(player_object);
+
+
+        Dictionary<String, PersonAPI> character_object_dict = character_object_list_to_dict(character_object_list);
+
+
+
+        Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
+
+        String current_swag_character;
+        PersonAPI current_swag_character_object;
+
+
+        while (swag_characters_iterator.hasNext()) 
+        {   
+            current_swag_character = swag_characters_iterator.next();
+            current_swag_character_object = character_object_dict.get(current_swag_character);
+            
+            
+            if (current_swag_character.equals(swagify_config.ALL_PLAYERS))
+            {
+                swagify_character(player_object);
+            }
+
+            else if (current_swag_character_object != null)
+            {   
+                swagify_character(current_swag_character_object);
+            }
+        }
+    }
+
+
+
+
     static void swagify_character(PersonAPI character_object)
     {   
         StringBuilder string_builder = new StringBuilder();
@@ -128,39 +169,6 @@ public class swagify_sprite_override extends BaseModPlugin
     @Override
     public void onGameLoad(boolean newGame)
     {
-        List<PersonDataAPI> important_character_wrapper_list = Global.getSector().getImportantPeople().getPeopleCopy();
-        PersonAPI player_object = Global.getSector().getCharacterData().getPerson();
-
-
-        List<PersonAPI> character_object_list = character_wrapper_list_to_object_list(important_character_wrapper_list);
-        character_object_list.add(player_object);
-
-
-        Dictionary<String, PersonAPI> character_object_dict = character_object_list_to_dict(character_object_list);
-
-
-
-        Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
-
-        String current_swag_character;
-        PersonAPI current_swag_character_object;
-
-
-        while (swag_characters_iterator.hasNext()) 
-        {   
-            current_swag_character = swag_characters_iterator.next();
-            current_swag_character_object = character_object_dict.get(current_swag_character);
-            
-            
-            if (current_swag_character.equals(swagify_config.ALL_PLAYERS))
-            {
-                swagify_character(player_object);
-            }
-
-            else if (current_swag_character_object != null)
-            {   
-                swagify_character(current_swag_character_object);
-            }
-        }
+        swagify_init();
     }
 }
