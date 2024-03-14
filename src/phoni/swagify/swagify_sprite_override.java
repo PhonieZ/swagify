@@ -5,11 +5,12 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI.PersonDataAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 
-import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
+
+import phoni.swagify.utils.character;
 
 
 
@@ -22,11 +23,11 @@ public class swagify_sprite_override extends BaseModPlugin
         PersonAPI player_object = Global.getSector().getCharacterData().getPerson();
 
 
-        List<PersonAPI> character_object_list = character_wrapper_list_to_object_list(important_character_wrapper_list);
+        List<PersonAPI> character_object_list = character.wrapper_list_to_object_list(important_character_wrapper_list);
         character_object_list.add(player_object);
 
 
-        Dictionary<String, PersonAPI> character_object_dict = character_object_list_to_dict(character_object_list);
+        Dictionary<String, PersonAPI> character_object_dict = character.object_list_to_dict(character_object_list);
 
 
 
@@ -112,57 +113,6 @@ public class swagify_sprite_override extends BaseModPlugin
         character_object.setPortraitSprite(swag_character_sprite_pointer);
     }  
     
-    
-
-    
-    static Dictionary<String, PersonAPI> character_object_list_to_dict(List<PersonAPI> character_object_list)
-    {   
-        StringBuilder string_builder = new StringBuilder();
-
-        String current_character_name;
-
-        Dictionary<String, PersonAPI> character_object_dict = new Hashtable<>();
-
-
-
-        for (PersonAPI current_character_object : character_object_list)
-        {
-            string_builder.append(current_character_object.getName().getFirst().toLowerCase());
-            //Lowercase First Name
-
-            string_builder.append(swagify_config.SEPARATOR);
-            //Separator
-
-            string_builder.append(current_character_object.getName().getLast().toLowerCase());
-            //Lowercase Last Name
-
-
-            current_character_name = string_builder.toString();
-            string_builder.setLength(0);
-
-
-            character_object_dict.put(current_character_name, current_character_object);
-        }
-
-
-
-        return character_object_dict;
-    }
-
-
-
-    static List<PersonAPI> character_wrapper_list_to_object_list(List<PersonDataAPI> character_wrapper_list)
-    {   
-        List<PersonAPI> character_object_list = new ArrayList<PersonAPI>();
-
-
-        for (PersonDataAPI current_character_wrapper : character_wrapper_list)
-            character_object_list.add(current_character_wrapper.getPerson());
-
-
-        return character_object_list;
-    }
-
 
 
 
