@@ -87,14 +87,6 @@ public class swagify_sprite_override extends BaseModPlugin
                                     "end_index", 
                                     substring_index_pair.get("start_index") + string_target_pair.get("target").length()
                                 );
-
-
-        
-
-        if (character_sprite_pointer.contains(string_target_pair.get("replacement")))
-        {
-            return;
-        }
         
 
      
