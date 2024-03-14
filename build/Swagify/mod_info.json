@@ -7,5 +7,4 @@
     "gameVersion": "0.97a-RC8",
     "jars": ["jars/swagify.jar"],
     "modPlugin": "phoni.swagify.swagify_sprite_override",
-    "dependencies": [{"id": "lw_console", "name": "Console Commands"}]
 }
