@@ -89,6 +89,12 @@ public class swagify_sprite_override extends BaseModPlugin
             return;
         }
 
+        //Failsafe Incase Substring We Are Inserting Into String Is Already In String, Unless Substring Is In What We Want To Replace In The String (Prevents Infinite Feedback Loops)
+        if ((character_sprite_pointer.contains(string_target_pair.get("replacement"))) && !(string_target_pair.get("target").contains(string_target_pair.get("replacement"))))
+        {
+            return;
+        }
+
 
         Dictionary<String, Integer> substring_index_pair = new Hashtable<>();
 
