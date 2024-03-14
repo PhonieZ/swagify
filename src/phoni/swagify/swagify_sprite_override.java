@@ -76,6 +76,13 @@ public class swagify_sprite_override extends BaseModPlugin
         String swag_character_sprite_pointer;
 
 
+        //Failsafe Incase Replacement Target Isn't In Sprite Pointer
+        if (!(character_sprite_pointer.contains(string_target_pair.get("target"))))
+        {
+            return;
+        }
+
+
         Dictionary<String, Integer> substring_index_pair = new Hashtable<>();
 
 
