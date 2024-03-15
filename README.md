@@ -1,2 +1,2 @@
 # swagify
- Swagifies Select Character Portraits
+ Swagifies Select Character Portraits, Documentation TBD
