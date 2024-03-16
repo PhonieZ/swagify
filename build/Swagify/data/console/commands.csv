@@ -1,3 +1,0 @@
-command,class,tags,syntax,help
-get_portrait,phoni.swagify.data.console.commands.get_portrait,campaign,get_portrait ,Gets Player Portrait SpriteID
-set_portrait,phoni.swagify.data.console.commands.set_portrait,campaign,set_portrait <spriteID>,Sets Player Portrait To Provided SpriteID
