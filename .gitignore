@@ -2,3 +2,4 @@
 .shortcuts
 .vscode
 lib/*.jar
+.*.py
