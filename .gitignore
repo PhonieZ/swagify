@@ -1,5 +1,3 @@
-.misc
-.shortcuts
-.vscode
+.*
 lib/*.jar
 .*.py
