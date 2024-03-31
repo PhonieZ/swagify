@@ -46,12 +46,6 @@ public class swagify_sprite_override extends BaseModPlugin
 
         else
         {   
-            //Debug
-            for (PersonAPI current_character_object : character_object_list)
-            {
-                swagify_character(current_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
-            }
-            //Debug
             Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
 
             String current_swag_character;
