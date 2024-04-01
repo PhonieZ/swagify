@@ -38,7 +38,6 @@ public class swagify_sprite_override extends BaseModPlugin
 
 
         
-
         if (!should_swagify_characters)
         {
             for (PersonAPI current_character_object : character_object_list)
@@ -63,6 +62,16 @@ public class swagify_sprite_override extends BaseModPlugin
                 return;
             }
             //debug
+
+
+            if (swagify_config.swag_characters.contains(swagify_config.ALL_PLAYERS))
+            {
+                swagify_character(player_object, swagify_config.SWAG_STRING_TARGET_PAIR);
+            }
+
+
+
+
             Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
 
             String current_swag_character;
@@ -73,14 +82,8 @@ public class swagify_sprite_override extends BaseModPlugin
             {   
                 current_swag_character = swag_characters_iterator.next();
                 current_swag_character_object = character_object_dict.get(current_swag_character);
-                
-                
-                if (current_swag_character.equals(swagify_config.ALL_PLAYERS))
-                {
-                    swagify_character(player_object, swagify_config.SWAG_STRING_TARGET_PAIR);
-                }
-    
-                else if (current_swag_character_object != null)
+
+                if (current_swag_character_object != null)
                 {   
                     swagify_character(current_swag_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
                 }
