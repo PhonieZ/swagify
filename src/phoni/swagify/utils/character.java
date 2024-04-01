@@ -1,6 +1,7 @@
 package phoni.swagify.utils;
 
 import com.fs.starfarer.api.characters.ImportantPeopleAPI.PersonDataAPI;
+import com.fs.starfarer.api.characters.OfficerDataAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 
 import java.util.ArrayList;
@@ -51,13 +52,37 @@ public class character
 
 
 
-    public static List<PersonAPI> wrapper_list_to_object_list(List<PersonDataAPI> character_wrapper_list)
+    public static List<PersonAPI> wrapper_list_to_object_list(List<?> character_wrapper_list) 
     {   
+        final boolean is_type_PersonDataAPI = (character_wrapper_list.get(0) instanceof PersonDataAPI);
+        final boolean is_type_OfficerDataAPI = (character_wrapper_list.get(0) instanceof OfficerDataAPI);
         List<PersonAPI> character_object_list = new ArrayList<PersonAPI>();
 
 
-        for (PersonDataAPI current_character_wrapper : character_wrapper_list)
-            character_object_list.add(current_character_wrapper.getPerson());
+
+        if (character_wrapper_list.isEmpty() || !(is_type_OfficerDataAPI || is_type_PersonDataAPI)) 
+        {
+            throw new IllegalArgumentException("List Must Be Of Type PersonDataAPI Or OfficerDataAPI");
+        }
+
+
+
+        if (character_wrapper_list.get(0) instanceof PersonDataAPI) 
+        {
+            for (Object current_character_wrapper : character_wrapper_list) 
+            {
+                character_object_list.add(((PersonDataAPI) current_character_wrapper).getPerson());
+            }
+        } 
+
+        else
+        {
+            for (Object current_character_wrapper : character_wrapper_list) 
+            {
+                character_object_list.add(((OfficerDataAPI) current_character_wrapper).getPerson());
+            }
+        } 
+
 
 
         return character_object_list;
