@@ -64,3 +64,32 @@ To Get Something Like This:
 </br>
 </br>
 ![Full Symlink Command](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/2-6.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+### 3. Set Up The Debug Bat File
+Under Your _starsector-core_ Folder, There Should Be A Bat File Named _starsector.bat_, Duplicate It And Name It `debug-starsector.bat`:
+![debug-starsector.bat Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/3-1.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+Then Start Editing This Bat File, And Insert This String Before The `-Djava.library.path=native\windows` Argument:
+```
+cd "D:\Program Files\Fractal Softworks\Starsector\starsector-core"
+start ..\jre\bin\java.exe -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dorg.codehaus.janino.source_debugging.enable=true
+```
+To Get Something Like This:
+![debug-starsector.bat Internals Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/3-2.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+### 4.
