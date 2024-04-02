@@ -17,9 +17,15 @@ However, This Guide Will Let You Automatically Compile And Test Changes You Make
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
 ### 1. Download The Repo:
 Go To The Top Of This Repo, And Click The `<> Code` Button, Then Click `Download Zip` Like Below:
 ![1st Step](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/1.png)
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -37,12 +43,18 @@ Where You Replace Everything Before `\Swagify` In `"D:\Program Files\Fractal Sof
 </br>
 </br>
 </br>
-And You Replace Everything Before \build in "D:\Users\user\Documents\GitHub\swagify\build\Swagify" With The Path To Your Clone Of This Repo, ie:
+</br>
+</br>
+</br>
+And You Replace Everything Before `\build` in `"D:\Users\user\Documents\GitHub\swagify\build\Swagify"` With The Path To Your Clone Of This Repo, ie:
 ![Example Path To Github Repo](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/2-3.png)
 </br>
 </br>
 </br>
 ![Example Path To Github Repo In Symlink Command](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/2-4.png)
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
