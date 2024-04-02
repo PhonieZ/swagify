@@ -93,7 +93,7 @@ To Get Something Like This:
 </br>
 </br>
 ### 4. Set Up The Tasks
-Go To The _workspace_setup_ Folder In The Repo, And Paste All The Files In There Into Your `.vscode` Folder (Make It If It Isn't Already There)
+Go To The _res\workspace_setup_ Folder In The Repo, And Paste All The Files In There Into Your `.vscode` Folder (Make It If It Isn't Already There)
 (Also If You Already Have A _settings.json_ File, The Important Part Is To Paste In The `"java.project.exportJar.targetPath": "${workspaceFolder}/build/Swagify/jars/swagify.jar",` Line Into There)
 </br>
 </br>
