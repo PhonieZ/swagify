@@ -3,6 +3,7 @@ package phoni.swagify;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI.PersonDataAPI;
+import com.fs.starfarer.api.characters.AdminData;
 import com.fs.starfarer.api.characters.OfficerDataAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 
@@ -21,15 +22,18 @@ public class swagify_sprite_override extends BaseModPlugin
     static void swagify_init(boolean should_swagify_characters)
     {
         List<PersonDataAPI> important_character_wrapper_list = Global.getSector().getImportantPeople().getPeopleCopy();
-        List<OfficerDataAPI> officer_wrapper_list = Global.getSector().getPlayerFleet().getFleetData().getOfficersCopy();
-        PersonAPI player_object = Global.getSector().getCharacterData().getPerson();
+        List<OfficerDataAPI> officer_wrapper_list            = Global.getSector().getPlayerFleet().getFleetData().getOfficersCopy();
+        List<AdminData> admin_wrapper_list                   = Global.getSector().getCharacterData().getAdmins();
+        PersonAPI player_object                              = Global.getSector().getCharacterData().getPerson();
 
 
         List<PersonAPI> character_object_list = character.wrapper_list_to_object_list(important_character_wrapper_list);
-        List<PersonAPI> officer_object_list = character.wrapper_list_to_object_list(officer_wrapper_list);
+        List<PersonAPI> officer_object_list   = character.wrapper_list_to_object_list(officer_wrapper_list);
+        List<PersonAPI> admin_object_list     = character.wrapper_list_to_object_list(admin_wrapper_list);
 
 
         character_object_list.addAll(officer_object_list);
+        character_object_list.addAll(admin_object_list);
         character_object_list.add(player_object);
 
 
