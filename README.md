@@ -10,7 +10,7 @@ This Is Optional, As This Guide Assumes You Already Have VSCode Set Up For Stars
 However, This Guide Will Let You Automatically Compile And Test Changes You Make To The Source Code (Including Debugging), Windows Only.
 
 
-### 1, Download The Repo
+### 1. Download The Repo:
 Go To The Top Of This Repo, And Click The "<> Code" Button, Then Click "Download Zip" Like Below:
 
 ![1st Step](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/1.png)
