@@ -101,7 +101,7 @@ Go To The _res\workspace_setup_ Folder In The Repo, And Paste All The Files In T
 </br>
 </br>
 </br>
-Then, Go Into The _tasks.json_ File, And On The Line With The Comment _// Replace This_, Replace Everything Before The `\debug-starsector.bat` With The Path To Your _starsector-core_ Folder, Replacing All / With \:
+Then, Go Into The _tasks.json_ File, And On The Line With The Comment _// Replace This_ , Replace Everything Before The `\debug-starsector.bat` With The Path To Your _starsector-core_ Folder, Replacing All / With \:
 ![starsector-core Folder Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/4-1.png)
 </br>
 </br>
