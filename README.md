@@ -1,8 +1,14 @@
 # Swagify
 TBD
 
+
+
+
 # Licensing
 TBD
+
+
+
 
 # Workspace Setup
 This Is Optional, As This Guide Assumes You Already Have VSCode Set Up For Starsector (Refer To This [Older Guide](https://fractalsoftworks.com/forum/index.php?topic=19532.0) Or [Newer Guide](https://fractalsoftworks.com/forum/index.php?topic=29638.0)).
