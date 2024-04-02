@@ -51,7 +51,6 @@ public class swagify_sprite_override extends BaseModPlugin
 
         else
         {   
-            //debug
             if (swagify_config.swag_characters.contains(swagify_config.ALL_CHARACTERS))
             {
                 for (PersonAPI current_character_object : character_object_list)
@@ -61,7 +60,6 @@ public class swagify_sprite_override extends BaseModPlugin
 
                 return;
             }
-            //debug
 
 
             if (swagify_config.swag_characters.contains(swagify_config.ALL_PLAYERS))

@@ -4,6 +4,7 @@
 
     #To Swagify A Select Character, Put In Their Character ID (Formatted "firstname_lastname", All Lowercase, For Example Alviss Sebestyen Becomes "alviss_sebestyen", )
     # "all_players", Makes All Player Portraits Swag, Otherwise Just Put In The Name Of Your Character If You Want Just Them To Be Swag
+    # "all_characters", Makes All Portraits Swag, Used For Debugging, As If You Want Everyone To Be Swag Just Use The Other Mod
     "swag_characters":
     [
         "all_players",
