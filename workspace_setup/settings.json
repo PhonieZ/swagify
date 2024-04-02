@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.exportJar.targetPath": "${workspaceFolder}/build/Swagify/jars/swagify.jar",
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar"
+        ],
+        "exclude": [
+            "lib/lw_Console.jar"
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks":
+    [
+        {
+            "label": "debug-starsector",
+            "type": "process",
+            "command": "D:\Program Files\Fractal Softworks\Starsector\starsector-core\debug-starsector.bat",// Replace This
+            "dependsOn": ["export-jar"]
+        },
+        {
+            "label": "export-jar",
+            "type": "java (buildArtifact)",
+            "targetPath": "${workspaceFolder}/build/Swagify/jars/swagify.jar",
+            "elements": ["lib/**/*.jar", "bin"]
+        }
+    ]
+}
