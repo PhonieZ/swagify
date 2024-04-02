@@ -21,7 +21,7 @@ However, This Guide Will Let You Automatically Compile And Test Changes You Make
 </br>
 </br>
 ### 1. Download The Repo:
-Go To The Top Of This Repo, And Click The `<> Code` Button, Then Click `Download Zip` Like Below:
+Go To The Top Of This Repo, And Click The _<> Code_ Button, Then Click _Download Zip_ Like Below:
 ![1st Step](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/1.png)
 </br>
 </br>
@@ -34,7 +34,7 @@ This Lets You Put Your Downloaded Repo Anywhere Whilst Still Being Able To Test 
 
 `mklink /d "D:\Program Files\Fractal Softworks\Starsector\mods\Swagify" "D:\Users\user\Documents\GitHub\swagify\build\Swagify"`
 
-Where You Replace Everything Before `\Swagify` In `"D:\Program Files\Fractal Softworks\Starsector\mods\Swagify"` With The Path To Your Starsector Mods Folder, ie:
+Where You Replace Everything Before `\Swagify` In `"D:\Program Files\Fractal Softworks\Starsector\mods\Swagify"` With The Path To Your _Starsector\mods_ Folder, ie:
 ![Example Path To Starsector Mods Folder](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/2-1.png)
 </br>
 </br>
@@ -92,4 +92,18 @@ To Get Something Like This:
 </br>
 </br>
 </br>
-### 4.
+### 4. Set Up The Tasks
+Go To The _workspace_setup_ Folder In The Repo, And Paste All The Files In There Into Your `.vscode` Folder (Make It If It Isn't Already There)
+(Also If You Already Have A _settings.json_ File, The Important Part Is To Paste In The `"java.project.exportJar.targetPath": "${workspaceFolder}/build/Swagify/jars/swagify.jar",` Line Into There)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+Then, Go Into The _tasks.json_ File, And On The Line With The Comment _// Replace This_, Replace Everything Before The `\debug-starsector.bat` With The Path To Your _starsector-core_ Folder, Replacing All / With \:
+![starsector-core Folder Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/4-1.png)
+</br>
+</br>
+</br>
+![tasks.json File Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/4-2.png)
