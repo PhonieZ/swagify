@@ -6,11 +6,13 @@ import com.fs.starfarer.api.characters.OfficerDataAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
 
 import phoni.swagify.swagify_config;
+import phoni.swagify.swagify_sprite_override;
 
 
 
@@ -55,6 +57,14 @@ public class character
 
     public static List<PersonAPI> wrapper_list_to_object_list(List<?> character_wrapper_list) 
     {   
+        //Failsafe To Prevent Errors From Being Thrown
+        if (character_wrapper_list.isEmpty()) 
+        {   
+            return Collections.emptyList();
+        }
+
+
+
         final boolean is_type_PersonDataAPI  = (character_wrapper_list.get(0) instanceof PersonDataAPI);
         final boolean is_type_OfficerDataAPI = (character_wrapper_list.get(0) instanceof OfficerDataAPI);
         final boolean is_type_AdminData      = (character_wrapper_list.get(0) instanceof AdminData);
@@ -62,7 +72,7 @@ public class character
 
 
 
-        if (character_wrapper_list.isEmpty() || !(is_type_OfficerDataAPI || is_type_PersonDataAPI || is_type_AdminData)) 
+        if (!(is_type_OfficerDataAPI || is_type_PersonDataAPI || is_type_AdminData)) 
         {
             throw new IllegalArgumentException("List Must Be Of Type PersonDataAPI, OfficerDataAPI Or AdminData");
         }
@@ -96,5 +106,28 @@ public class character
 
 
         return character_object_list;
+    }
+
+
+
+    public static void swagify_character_object_list(List<PersonAPI> character_object_list, boolean should_swagify_characters)
+    {   
+        Dictionary<String,String> string_target_pair;
+        
+        if (should_swagify_characters)
+        {
+            string_target_pair = swagify_config.SWAG_STRING_TARGET_PAIR;
+        }
+
+        else
+        {
+            string_target_pair = swagify_config.DESWAG_STRING_TARGET_PAIR;
+        }
+
+
+        for (PersonAPI current_character_object : character_object_list)
+        {
+            swagify_sprite_override.swagify_character(current_character_object, string_target_pair);
+        }
     }
 }

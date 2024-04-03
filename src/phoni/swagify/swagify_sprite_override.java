@@ -44,51 +44,62 @@ public class swagify_sprite_override extends BaseModPlugin
         
         if (!should_swagify_characters)
         {
-            for (PersonAPI current_character_object : character_object_list)
-            {
-                swagify_character(current_character_object, swagify_config.DESWAG_STRING_TARGET_PAIR);
-            }
+            character.swagify_character_object_list(character_object_list, false);
+
+            return;
         }
 
 
 
 
-        else
+
+
+
+ 
+        if (swagify_config.swag_characters.contains(swagify_config.ALL_CHARACTERS))
+        {
+            character.swagify_character_object_list(character_object_list, true);
+
+            return;
+        }
+
+
+        
+
+        if (swagify_config.swag_characters.contains(swagify_config.ALL_PLAYERS))
+        {
+            swagify_character(player_object, swagify_config.SWAG_STRING_TARGET_PAIR);
+        }
+
+
+        if (swagify_config.swag_characters.contains(swagify_config.ALL_OFFICERS))
+        {
+            character.swagify_character_object_list(officer_object_list, true);
+        }
+
+
+        if (swagify_config.swag_characters.contains(swagify_config.ALL_ADMINS))
+        {
+            character.swagify_character_object_list(admin_object_list, true);
+        }
+
+
+
+
+        Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
+
+        String current_swag_character;
+        PersonAPI current_swag_character_object;
+
+
+        while (swag_characters_iterator.hasNext()) 
         {   
-            if (swagify_config.swag_characters.contains(swagify_config.ALL_CHARACTERS))
-            {
-                for (PersonAPI current_character_object : character_object_list)
-                {
-                    swagify_character(current_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
-                }
+            current_swag_character = swag_characters_iterator.next();
+            current_swag_character_object = character_object_dict.get(current_swag_character);
 
-                return;
-            }
-
-
-            if (swagify_config.swag_characters.contains(swagify_config.ALL_PLAYERS))
-            {
-                swagify_character(player_object, swagify_config.SWAG_STRING_TARGET_PAIR);
-            }
-
-
-
-
-            Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
-
-            String current_swag_character;
-            PersonAPI current_swag_character_object;
-    
-    
-            while (swag_characters_iterator.hasNext()) 
+            if (current_swag_character_object != null)
             {   
-                current_swag_character = swag_characters_iterator.next();
-                current_swag_character_object = character_object_dict.get(current_swag_character);
-
-                if (current_swag_character_object != null)
-                {   
-                    swagify_character(current_swag_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
-                }
+                swagify_character(current_swag_character_object, swagify_config.SWAG_STRING_TARGET_PAIR);
             }
         }
     }
@@ -96,7 +107,7 @@ public class swagify_sprite_override extends BaseModPlugin
 
 
 
-    static void swagify_character(PersonAPI character_object, Dictionary<String, String> string_target_pair)
+    public static void swagify_character(PersonAPI character_object, Dictionary<String, String> string_target_pair)
     {   
         StringBuilder string_builder = new StringBuilder();
 

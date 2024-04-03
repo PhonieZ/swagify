@@ -19,8 +19,10 @@ import java.util.Set;
 public class swagify_config 
 {   
     public static final String SEPARATOR = "_";
-    public static final String ALL_PLAYERS = "all_players";
     public static final String ALL_CHARACTERS = "all_characters";
+    public static final String ALL_PLAYERS = "all_players";
+    public static final String ALL_OFFICERS = "all_officers";
+    public static final String ALL_ADMINS = "all_admins";
 
 
     public static final Dictionary<String, String> SWAG_STRING_TARGET_PAIR = new Hashtable<>();
