@@ -1,5 +1,21 @@
 # Swagify
-TBD
+![Swagify Logo](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/banner.png)
+</br>
+_"…Alviss, his portrait looks like he's, like this 35 year old depressed academic, but his dialogue sounds a lot more like a young graduate who's very fresh-faced and is really optimistic and naive…which is kind of contrasted by it \[his portrait]\: he looks a lot older and kind of depressed…so maybe we should make the portrait just look less like a 35-year-old jaded academic…"_
+
+\- Big Brain Energy, Colonizing is Fun, 2:18
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -47,6 +63,12 @@ Go To The _res/extension_pack_templates_ Folder In The Repo, And Download The _s
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 ### 2. Assemble The Portraits:
 Go To The _graphics_ Folder In The Mod You Are Making An Extension Pack Of (In The Example Ironshell Is Used), And Copy The _portraits_ Folder Into The _graphics\phoni\swagify_ In The Extension Pack Template:
@@ -58,8 +80,17 @@ Go To The _graphics_ Folder In The Mod You Are Making An Extension Pack Of (In T
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
 Next, In The Extension Pack, Delete All The Portraits You Aren't Going To Swagify, Then Get To Editing:
 ![Swag Iron Shell Portrait](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/f2-3.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -78,11 +109,29 @@ Go To The _data\world\factions_ Folder In Your Extension Pack, Then Like In The 
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 ### 4. Complete The _mod.json_ File:
 Finally, Go To The _mod.json_ File, And Be Sure To Change The _id_, _name_, _author_ And _description_ Fields As Approriate, Then Feel Free To Post Your Extension Pack Onto The Mod Index Or Wherever:
 </br>
 ![Example mod_info.json](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/f4.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -112,15 +161,26 @@ Thanks To _Jaghaimo_ For Providing Some Of The Steps For The Workspace Setup, Th
 </br>
 </br>
 </br>
-Thanks To _PAGSM's Makers_ For Providing Inspiration For What All The Swag Portraits I Made Should Look Like (I Used Balashi As My Main Reference), Without Them My Art Direction Probably Would Have Been Poorer
-</br>
+Thanks To _PAGSM's Makers_ For Giving Me A Solid Art Direction (I Used Balashi As My Main Reference)
 </br>
 </br>
 And Most Of All, Thanks To _Big Brain Energy_ For Giving Me The Greatest Idea Of Giving Sebestyen Swag Glasses, You Are The Only Reason I Thought To Make This Mod
 </br>
 </br>
 </br>
-![Swagviss Sebestyen](https://raw.githubusercontent.com/PhonieZ/swagify/main/build/Swagify/graphics/phoni/swagify/factions/crest_swag.png)
+![Swagify Logo Centred](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/logo_centred.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -142,10 +202,22 @@ However, This Guide Will Let You Automatically Compile And Test Changes You Make
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 ### 1. Download The Repo:
 Go To The Top Of This Repo, And Click The _<> Code_ Button, Then Click _Download Zip_ Like Below:
 ![1st Step](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/1.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -192,6 +264,12 @@ To Get Something Like This:
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 ### 3. Set Up The Debug Bat File:
 Under Your _starsector-core_ Folder, There Should Be A Bat File Named _starsector.bat_, Duplicate It And Name It `debug-starsector.bat`:
@@ -203,12 +281,24 @@ Under Your _starsector-core_ Folder, There Should Be A Bat File Named _starsecto
 </br>
 </br>
 Then Start Editing This Bat File, And Insert This String Before The `-Djava.library.path=native\windows` Argument (Replacing The Path In The cd Line With The Path To Your _starsector-core_ Folder):
+</br>
+</br>
+</br>
 ```
 cd "D:\Program Files\Fractal Softworks\Starsector\starsector-core"
 start ..\jre\bin\java.exe -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dorg.codehaus.janino.source_debugging.enable=true
 ```
+</br>
+</br>
+
 To Get Something Like This:
 ![debug-starsector.bat Internals Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/3-2.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
