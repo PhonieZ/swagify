@@ -5,13 +5,19 @@ TBD
 </br>
 </br>
 </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 ## Swagify - Extension Packs
-</br>
-</br>
-
 ### What Is An Extension Pack?
 An Extension Pack Allows Anyone To Expand On The Swag Portraits In This Mod Without Having To Modify The Core Swagify Mod Itself, So It Is Possible To Add Swag Support To A Mod Like Iron Shell Or Scalar Tech Solutions
+</br>
+</br>
+</br>
 </br>
 </br>
 
@@ -21,6 +27,15 @@ You Follow This Tutorial Below:
 </br>
 </br>
 _(Also For Swagify: The Swagening, Just Use The Mod Template In The Same Folder As Referenced Below, But All You Need To Do Is Just Put Your Copied Portraits Folder Straight In The Graphics Folder)_
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 
@@ -33,7 +48,7 @@ Go To The _res/extension_pack_templates_ Folder In The Repo, And Download The _s
 </br>
 </br>
 
-### 2. Assemble The Portraits
+### 2. Assemble The Portraits:
 Go To The _graphics_ Folder In The Mod You Are Making An Extension Pack Of (In The Example Ironshell Is Used), And Copy The _portraits_ Folder Into The _graphics\phoni\swagify_ In The Extension Pack Template:
 ![Iron Shell Portraits Folder](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/f2-1.png)
 </br>
@@ -51,7 +66,7 @@ Next, In The Extension Pack, Delete All The Portraits You Aren't Going To Swagif
 </br>
 </br>
 
-### 3. Load The Portraits Into The Game
+### 3. Load The Portraits Into The Game:
 Go To The _data\world\factions_ Folder In Your Extension Pack, Then Like In The Provided Example, Put A Path To Your Portraits Into Both The Male And Female Entries of The _swag.faction_ File:
 ![Swag Iron Shell Portrait](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/f2-3.png)
 </br>
@@ -65,7 +80,7 @@ Go To The _data\world\factions_ Folder In Your Extension Pack, Then Like In The 
 </br>
 
 ### 4. Complete The _mod.json_ File:
-Finally, Go To The _mod.json_ File, And Be Sure To Change The _id_,_name_,_author_ And _description_ Fields As Approriate, Then Feel Free To Post Your Extension Pack Onto The Mod Index Or Wherever:
+Finally, Go To The _mod.json_ File, And Be Sure To Change The _id_, _name_, _author_ And _description_ Fields As Approriate, Then Feel Free To Post Your Extension Pack Onto The Mod Index Or Wherever:
 </br>
 ![Example mod_info.json](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/f4.png)
 </br>
@@ -209,7 +224,7 @@ Go To The _res\workspace_setup_ Folder In The Repo, And Paste All The Files In T
 </br>
 </br>
 </br>
-Then, Go Into The _tasks.json_ File, And On The Line With The Comment _// Replace This_ , Replace Everything Before The `\debug-starsector.bat` With The Path To Your _starsector-core_ Folder, Replacing All / With \:
+Then, Go Into The _tasks.json_ File, And On The Line With The Comment _// Replace This_ , Replace Everything Before The `\debug-starsector.bat` With The Path To Your _starsector-core_ Folder, Replacing All `\` With `/`:
 ![starsector-core Folder Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/4-1.png)
 </br>
 </br>
