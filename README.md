@@ -1,15 +1,51 @@
 # Swagify
 TBD
-
-
-
-
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 # Licensing
-TBD
-
-
-
-
+All Swag Portraits Fall Under _Starsector's License_ For The Vanilla Portraits
+</br>
+</br>
+</br>
+All Code Is Mine, So Falls Under The _MIT License_
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+## Credits
+Thanks To Jaghaimo For Providing Some Of The Steps For The Workspace Setup, Though I Still Had To Figure Some Things Out Myself
+</br>
+</br>
+</br>
+Thanks To PAGSM's Makers For Providing Inspiration For What All The Swag Portraits I Made Should Look Like (I Used Balashi As My Main Reference), Without Them My Art Direction Probably Would Have Been Poorer
+</br>
+</br>
+</br>
+And Most Of All, Thanks To Big Brain Energy For Giving Me The Greatest Idea Of Giving Sebestyen Swag Glasses, You Are The Only Reason I Thought To Make This Mod
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 # Workspace Setup
 This Is Optional, As This Guide Assumes You Already Have VSCode Set Up For Starsector (Refer To This [Older Guide](https://fractalsoftworks.com/forum/index.php?topic=19532.0) Or [Newer Guide](https://fractalsoftworks.com/forum/index.php?topic=29638.0)).
 
@@ -79,7 +115,7 @@ Under Your _starsector-core_ Folder, There Should Be A Bat File Named _starsecto
 </br>
 </br>
 </br>
-Then Start Editing This Bat File, And Insert This String Before The `-Djava.library.path=native\windows` Argument:
+Then Start Editing This Bat File, And Insert This String Before The `-Djava.library.path=native\windows` Argument (Replacing The Path In The cd Line With The Path To Your _starsector-core_ Folder):
 ```
 cd "D:\Program Files\Fractal Softworks\Starsector\starsector-core"
 start ..\jre\bin\java.exe -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dorg.codehaus.janino.source_debugging.enable=true
