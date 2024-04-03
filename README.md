@@ -1,9 +1,114 @@
-# Swagify
+# Swagify \[Portraits Unfinished, 53% Done]
 ![Swagify Logo](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/banner.png)
 </br>
 _"…Alviss, his portrait looks like he's, like this 35 year old depressed academic, but his dialogue sounds a lot more like a young graduate who's very fresh-faced and is really optimistic and naive…which is kind of contrasted by it \[his portrait]\: he looks a lot older and kind of depressed…so maybe we should make the portrait just look less like a 35-year-old jaded academic…"_
 
 \- Big Brain Energy, Colonizing is Fun, 2:18
+</br>
+</br>
+</br>
+</br>
+</br>
+
+### Are You Tired Of Sebestyen Looking Like He Got 2 Hours of Sleep? 
+</br>
+</br>
+
+### Are You Tired Of You And Your Crew Being Swagless And Sad?
+</br>
+</br>
+
+### Well, If You Answered _Any_ Of Those Questions, [_Then You Should Download Swagify Now!_](https://github.com/PhonieZ/swagify/releases/download/0.0.1_beta/Swagify_0.0.1_beta.zip)
+</br>
+</br>
+</br>
+</br>
+</br>
+
+## Features
+### * Make Yourself Swag!
+</br>
+</br>
+
+### * Make Your Staff Swag!
+</br>
+</br>
+
+### * Make [_Everyone_](#also-if-you-want-to-swagify-everyone-no-questions-asked-download-swagify-the-swagening-here) And Anyone Swag!
+</br>
+</br>
+
+### * And _Most_ Of All, [_Its Fully Configurable!_](#usage)<sub> _UI Not Included_</sub>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+### Disclaimer
+The Main Swagify Mod Only Includes Swag Portraits For Nearly Everything In Vanilla, If You Want Your Modded Portraits To Be Swag Look To [_Extension Packs_](#swagify---extension-packs)
+</br>
+
+![Swagify Screenshots](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/screenshots.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+## Usage
+In The Swagify Mod Folder, Open phoni_swagify_config.json And Refer To The Instructions Inside, Excerpt Below:
+```
+{
+    #Set To true To De-Swag all Character Portraits Upon Mod Removal, Set To false To Leave Changes In (No Undoing Anything)
+    "is_sprite_change_permanent": false,
+
+    #                   To Swagify A Select Character, Put In Their Character ID (Formatted "firstname_lastname", All Lowercase, For Example Alviss Sebestyen Becomes "alviss_sebestyen", )
+    # "all_characters", Makes All Portraits Swag, Used For Debugging, As If You Want Everyone To Be Swag Just Use Swagify: The Swagening
+    # "all_players",    Makes All Player Portraits Swag, Otherwise Just Put In The Name Of Your Character If You Want Just Them To Be Swag
+    # "all_officers",   Makes All Player's Officers Swag, Otherwise Just Put In The Name Of Individual Officers If You Want Just Them To Be Swag
+    # "all_admins",     Makes All Player's Administrators Swag, Otherwise Just Put In The Name Of Individual Administrators If You Want Just Them To Be Swag
+    "swag_characters":
+    [
+        "all_players",
+        "alviss_sebestyen",
+    ]
+}
+```
+### Also, If You Want To Swagify _Everyone_, No Questions Asked, Download Swagify: The Swagening [_Here_](https://github.com/PhonieZ/swagify/releases/download/0.0.1_beta/SwagifyTheSwagening_0.0.1_beta.zip)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+## Limitations
+
+* Unless [_`is_sprite_change_permanent`_](#usage) Is Enabled, The Player Looks Normal In Save Selection
+</br>
+</br>
+
+* __Unless You Are Using [_Swagify: The Swagening_](#also-if-you-want-to-swagify-everyone-no-questions-asked-download-swagify-the-swagening-here), Sometimes Characters Will Appear Normal In Inline Mission Completion Messages__
+</br>
+</br>
+
+* __Unless You Are Using [_Swagify: The Swagening_](#also-if-you-want-to-swagify-everyone-no-questions-asked-download-swagify-the-swagening-here), You Will Be Unable To Swagify Unimportant People__
+</br>
+</br>
+
+* __There Is No UI For Swag Configuration (Not Planning To Change It From A .json In The Near Future)__
 </br>
 </br>
 </br>
@@ -30,7 +135,7 @@ _"…Alviss, his portrait looks like he's, like this 35 year old depressed acade
 
 ## Swagify - Extension Packs
 ### What Is An Extension Pack?
-An Extension Pack Allows Anyone To Expand On The Swag Portraits In This Mod Without Having To Modify The Core Swagify Mod Itself, So It Is Possible To Add Swag Support To A Mod Like Iron Shell Or Scalar Tech Solutions
+An Extension Pack Allows Anyone To Expand On The Swag Portraits In This Mod Without Having To Modify The Core Swagify Mod Itself, So It Is Possible To Easily Add Swag Support To A Mod Like Iron Shell Or Scalar Tech Solutions
 </br>
 </br>
 </br>
@@ -43,6 +148,18 @@ You Follow This Tutorial Below:
 </br>
 </br>
 _(Also For Swagify: The Swagening, Just Use The Mod Template In The Same Folder As Referenced Below, But All You Need To Do Is Just Put Your Copied Portraits Folder Straight In The Graphics Folder)_
+</br>
+</br>
+</br>
+</br>
+</br>
+
+### Where Do I Find Them?
+Probably In The Portrait Packs Section On The Mod Index
+</br>
+</br>
+</br>
+_(Note To Anyone Making An Extension Pack, If Posting It To The Mod Index, Please PM The Mods To Put It In The "Portrait Packs" Section, Or I Will Glare Angrily At You)_
 </br>
 </br>
 </br>
@@ -120,55 +237,6 @@ Go To The _data\world\factions_ Folder In Your Extension Pack, Then Like In The 
 Finally, Go To The _mod.json_ File, And Be Sure To Change The _id_, _name_, _author_ And _description_ Fields As Approriate, Then Feel Free To Post Your Extension Pack Onto The Mod Index Or Wherever:
 </br>
 ![Example mod_info.json](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/f4.png)
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-# Licensing
-All Swag Portraits Fall Under _Starsector's License_ For The Vanilla Portraits
-</br>
-</br>
-</br>
-All Code Is Mine, So Falls Under The _MIT License_
-</br>
-</br>
-</br>
-</br>
-</br>
-
-## Credits
-Thanks To _Jaghaimo_ For Providing Some Of The Steps For The Workspace Setup, Though I Still Had To Figure Some Things Out Myself
-</br>
-</br>
-</br>
-Thanks To _PAGSM's Makers_ For Giving Me A Solid Art Direction (I Used Balashi As My Main Reference)
-</br>
-</br>
-And Most Of All, Thanks To _Big Brain Energy_ For Giving Me The Greatest Idea Of Giving Sebestyen Swag Glasses, You Are The Only Reason I Thought To Make This Mod
-</br>
-</br>
-</br>
-![Swagify Logo Centred](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/logo_centred.png)
 </br>
 </br>
 </br>
@@ -320,3 +388,53 @@ Then, Go Into The _tasks.json_ File, And On The Line With The Comment _// Replac
 </br>
 </br>
 ![tasks.json File Example](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/4-2.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+# Licensing
+All Swag Portraits Fall Under _Starsector's License_ For The Vanilla Portraits
+</br>
+</br>
+</br>
+All Code Is Mine, So Falls Under The _MIT License_
+</br>
+</br>
+</br>
+</br>
+</br>
+
+## Credits
+Thanks To _Jaghaimo_ For Providing Some Of The Steps For The Workspace Setup, Though I Still Had To Figure Some Things Out Myself
+</br>
+</br>
+</br>
+Thanks To _PAGSM's Makers_ For Giving Me A Solid Art Direction (I Used Balashi As My Main Reference)
+</br>
+</br>
+</br>
+And Most Of All, Thanks To _Big Brain Energy_ For Giving Me The Greatest Idea Of Giving Sebestyen Swag Glasses, You Are The Only Reason I Thought To Make This Mod
+</br>
+</br>
+</br>
+![Swagify Logo Centred](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/logo_centred.png)
