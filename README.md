@@ -25,15 +25,19 @@ All Code Is Mine, So Falls Under The _MIT License_
 </br>
 </br>
 ## Credits
-Thanks To Jaghaimo For Providing Some Of The Steps For The Workspace Setup, Though I Still Had To Figure Some Things Out Myself
+Thanks To _Jaghaimo_ For Providing Some Of The Steps For The Workspace Setup, Though I Still Had To Figure Some Things Out Myself
 </br>
 </br>
 </br>
-Thanks To PAGSM's Makers For Providing Inspiration For What All The Swag Portraits I Made Should Look Like (I Used Balashi As My Main Reference), Without Them My Art Direction Probably Would Have Been Poorer
+Thanks To _PAGSM's Makers_ For Providing Inspiration For What All The Swag Portraits I Made Should Look Like (I Used Balashi As My Main Reference), Without Them My Art Direction Probably Would Have Been Poorer
 </br>
 </br>
 </br>
-And Most Of All, Thanks To Big Brain Energy For Giving Me The Greatest Idea Of Giving Sebestyen Swag Glasses, You Are The Only Reason I Thought To Make This Mod
+And Most Of All, Thanks To _Big Brain Energy_ For Giving Me The Greatest Idea Of Giving Sebestyen Swag Glasses, You Are The Only Reason I Thought To Make This Mod
+</br>
+</br>
+</br>
+![Swagviss Sebestyen](https://raw.githubusercontent.com/PhonieZ/swagify/main/build/Swagify/graphics/phoni/swagify/factions/crest_swag.png)
 </br>
 </br>
 </br>
