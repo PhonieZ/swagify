@@ -1,0 +1,8 @@
+{
+    "id": "example_swagify_extension_pack",
+    "name": "Example Swagify Extension Pack",
+    "author": "Example",
+    "description": "An Example Extension Pack For The Swagify Mod",
+    "version": {"major": 1, "minor": 0, "patch": 0},
+    "gameVersion": "0.97a-RC8",
+}

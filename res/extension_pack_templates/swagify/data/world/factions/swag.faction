@@ -1,0 +1,12 @@
+{
+	"portraits":{
+        "standard_male":[
+            # Example, You Can Delete This If You Want
+            # "graphics/phoni/swagify/portraits/characters/sebestyen.png",
+        ],
+        "standard_female":[
+            # Example, You Can Delete This If You Want
+            # "graphics/phoni/swagify/portraits/characters/sebestyen.png",
+        ],
+	},
+},
