@@ -37,9 +37,6 @@ public class swagify_sprite_override extends BaseModPlugin
         character_object_list.add(player_object);
 
 
-        Dictionary<String, PersonAPI> character_object_dict = character.object_list_to_dict(character_object_list);
-
-
 
         
         if (!should_swagify_characters)
@@ -62,8 +59,6 @@ public class swagify_sprite_override extends BaseModPlugin
 
             return;
         }
-
-
         
 
         if (swagify_config.swag_characters.contains(swagify_config.ALL_PLAYERS))
@@ -86,6 +81,11 @@ public class swagify_sprite_override extends BaseModPlugin
 
 
 
+
+
+
+
+        Dictionary<String, PersonAPI> character_object_dict = character.object_list_to_dict(character_object_list);
         Iterator<String> swag_characters_iterator = swagify_config.swag_characters.iterator();
 
         String current_swag_character;
@@ -143,15 +143,17 @@ public class swagify_sprite_override extends BaseModPlugin
         
 
      
-        
-        string_builder.append(character_sprite_pointer.substring(0, substring_index_pair.get("start_index"))); 
+
         //Start Index ==> Index Before Target
+        string_builder.append(character_sprite_pointer.substring(0, substring_index_pair.get("start_index"))); 
 
-        string_builder.append(string_target_pair.get("replacement"));
+
         //Replacement String
+        string_builder.append(string_target_pair.get("replacement"));
 
-        string_builder.append(character_sprite_pointer.substring(substring_index_pair.get("end_index"), character_sprite_pointer.length()));
+
         //Index After Target ==> End Index
+        string_builder.append(character_sprite_pointer.substring(substring_index_pair.get("end_index"), character_sprite_pointer.length()));
 
 
         swag_character_sprite_pointer = string_builder.toString();
@@ -168,25 +170,13 @@ public class swagify_sprite_override extends BaseModPlugin
     @Override
     public void onGameLoad(boolean newGame)
     {
-        swagify_init(true);
-    }
-
-    @Override
-    public void afterGameSave()
-    {
-        if (!swagify_config.is_sprite_change_permanent)
+        if (!(swagify_config.is_sprite_change_permanent))
         {
-            swagify_init(true);
-        }
-    }
-
-
-    @Override
-    public void beforeGameSave()
-    {
-        if (!swagify_config.is_sprite_change_permanent)
-        {
+            //Reset All Portraits Back To Normal
             swagify_init(false);
+
+            //Make All Portraits Listed In Config Swag
+            swagify_init(true);
         }
     }
 }
