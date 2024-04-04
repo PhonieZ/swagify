@@ -29,7 +29,7 @@ _"…Alviss, his portrait looks like he's, like this 35 year old depressed acade
 </br>
 
 ## Usage
-In The Swagify Mod Folder, Open phoni_swagify_config.json And Refer To The Instructions Inside, Excerpt Below:
+In The Swagify Mod Folder, Open _phoni_swagify_config.json_ And Refer To The Instructions Inside, Excerpt Below:
 ```
 {
     #Set To true To Stop Mod From Making Any More Changes To What Sprites Are Swag Or Not: Setting This To true Locks In The Status Of All Character Portraits
