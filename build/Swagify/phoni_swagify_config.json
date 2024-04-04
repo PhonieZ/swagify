@@ -1,12 +1,13 @@
 {
-    #Set To true To De-Swag all Character Portraits Upon Mod Removal, Set To false To Leave Changes In (No Undoing Anything)
+    #Set To true To Stop Mod From Making Any More Changes To What Sprites Are Swag Or Not: Setting This To true Locks In The Status Of All Character Portraits
     "is_sprite_change_permanent": false,
 
-    #                   To Swagify A Select Character, Put In Their Character ID (Formatted "firstname_lastname", All Lowercase, For Example Alviss Sebestyen Becomes "alviss_sebestyen", )
-    # "all_characters", Makes All Portraits Swag, Used For Debugging, As If You Want Everyone To Be Swag Just Use Swagify: The Swagening
-    # "all_players",    Makes All Player Portraits Swag, Otherwise Just Put In The Name Of Your Character If You Want Just Them To Be Swag
-    # "all_officers",   Makes All Player's Officers Swag, Otherwise Just Put In The Name Of Individual Officers If You Want Just Them To Be Swag
-    # "all_admins",     Makes All Player's Administrators Swag, Otherwise Just Put In The Name Of Individual Administrators If You Want Just Them To Be Swag
+    #                   To Swagify A Individual Character, Put In Their Character ID (Formatted "firstname_lastname", All Lowercase, For Example Alviss Sebestyen Becomes "alviss_sebestyen", )
+    #                   This Includes Players From Individual Playthroughs, Officers, Administrators And Important Characters Like Sebestyen Or Kanta
+    # "all_characters", Makes All Portraits Swag, Better To Use Swagify: The Swagening Instead
+    # "all_players",    Makes All Player Portraits Swag
+    # "all_officers",   Makes All Of The Player's Officers Swag
+    # "all_admins",     Makes All Of The Player's Administrators Swag
     "swag_characters":
     [
         "all_players",
