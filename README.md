@@ -9,23 +9,7 @@ _"…Alviss, his portrait looks like he's, like this 35 year old depressed acade
 </br>
 </br>
 </br>
-
-### [_Main Swagify Page_](https://github.com/PhonieZ/swagify)<!-- Replace With Actual Forum Post Link When It Is Up -->
 </br>
-</br>
-</br>
-</br>
-</br>
-
-### Are You Tired Of Sebestyen Looking Like He Got 2 Hours of Sleep? 
-</br>
-</br>
-
-### Are You Tired Of You And Your Crew Being Swagless And Sad?
-</br>
-</br>
-
-### Well, If You Answered _Any_ Of Those Questions, [_Then You Should Download Swagify Now!_](https://github.com/PhonieZ/swagify/releases/download/0.0.1_beta/Swagify_0.0.1_beta.zip)
 </br>
 </br>
 </br>
@@ -33,36 +17,11 @@ _"…Alviss, his portrait looks like he's, like this 35 year old depressed acade
 </br>
 
 ## Features
-### * Make Yourself Swag!
-</br>
-</br>
+* Swagify Introduces Swag Versions Of All The Vanilla Portraits, Alongside Having Support For Mods In The Form Of [_Extension Packs_](#swagify---extension-packs)
 
-### * Make Your Staff Swag!
-</br>
-</br>
+* The Mod Is Also [_Fully Configurable_](#usage) And Gives You Complete Freedom Over Who Is Swag Or Not
 
-### * Make [_Everyone_](#also-if-you-want-to-swagify-everyone-no-questions-asked-download-swagify-the-swagening-here) And Anyone Swag!
-</br>
-</br>
-
-### * And _Most_ Of All, [_Its Fully Configurable!_](#usage)<sub> _UI Not Included_</sub>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-### Disclaimer
-The Main Swagify Mod Only Includes Swag Portraits For Nearly Everything In Vanilla, If You Want Your Modded Portraits To Be Swag Look To [_Extension Packs_](#swagify---extension-packs)
-</br>
-
-![Swagify Screenshots](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/screenshots.png)
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+* Finally, If You Want Everyone To Be Swag Without Any Catches, Look To The [_Swagify: The Swagening_](#swagify-the-swagening-download) Submod
 </br>
 </br>
 </br>
@@ -73,14 +32,15 @@ The Main Swagify Mod Only Includes Swag Portraits For Nearly Everything In Vanil
 In The Swagify Mod Folder, Open phoni_swagify_config.json And Refer To The Instructions Inside, Excerpt Below:
 ```
 {
-    #Set To true To De-Swag all Character Portraits Upon Mod Removal, Set To false To Leave Changes In (No Undoing Anything)
+    #Set To true To Stop Mod From Making Any More Changes To What Sprites Are Swag Or Not: Setting This To true Locks In The Status Of All Character Portraits
     "is_sprite_change_permanent": false,
 
-    #                   To Swagify A Select Character, Put In Their Character ID (Formatted "firstname_lastname", All Lowercase, For Example Alviss Sebestyen Becomes "alviss_sebestyen", )
-    # "all_characters", Makes All Portraits Swag, Used For Debugging, As If You Want Everyone To Be Swag Just Use Swagify: The Swagening
-    # "all_players",    Makes All Player Portraits Swag, Otherwise Just Put In The Name Of Your Character If You Want Just Them To Be Swag
-    # "all_officers",   Makes All Player's Officers Swag, Otherwise Just Put In The Name Of Individual Officers If You Want Just Them To Be Swag
-    # "all_admins",     Makes All Player's Administrators Swag, Otherwise Just Put In The Name Of Individual Administrators If You Want Just Them To Be Swag
+    #                   To Swagify A Individual Character, Put In Their Character ID (Formatted "firstname_lastname", All Lowercase, For Example Alviss Sebestyen Becomes "alviss_sebestyen", )
+    #                   This Includes Players From Individual Playthroughs, Officers, Administrators And Important Characters Like Sebestyen Or Kanta
+    # "all_characters", Makes All Portraits Swag, Better To Use Swagify: The Swagening Instead
+    # "all_players",    Makes All Player Portraits Swag
+    # "all_officers",   Makes All Of The Player's Officers Swag
+    # "all_admins",     Makes All Of The Player's Administrators Swag
     "swag_characters":
     [
         "all_players",
@@ -88,34 +48,23 @@ In The Swagify Mod Folder, Open phoni_swagify_config.json And Refer To The Instr
     ]
 }
 ```
-### Also, If You Want To Swagify _Everyone_, No Questions Asked, Download Swagify: The Swagening [_Here_](https://github.com/PhonieZ/swagify/releases/download/0.0.1_beta/SwagifyTheSwagening_0.0.1_beta.zip)
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 </br>
 </br>
 </br>
 </br>
 </br>
 
-## Limitations
-
-* Unless [_`is_sprite_change_permanent`_](#usage) Is Enabled, The Player Looks Normal In Save Selection
+### [_Starsector Forum Post_]()
+### [_Swagify Download_]()
+### [_Swagify: The Swagening Download_]()
+### [_Licensing And Credits_](#licensing)
 </br>
 </br>
-
-* __Unless You Are Using [_Swagify: The Swagening_](#also-if-you-want-to-swagify-everyone-no-questions-asked-download-swagify-the-swagening-here), Sometimes Characters Will Appear Normal In Inline Mission Completion Messages__
 </br>
-</br>
-
-* __Unless You Are Using [_Swagify: The Swagening_](#also-if-you-want-to-swagify-everyone-no-questions-asked-download-swagify-the-swagening-here), You Will Be Unable To Swagify Unimportant People__
 </br>
 </br>
 
-* __There Is No UI For Swag Configuration (Not Planning To Change It From A .json In The Near Future)__
+![Swagify Screenshots](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/screenshots.png)
 </br>
 </br>
 </br>
@@ -142,7 +91,25 @@ In The Swagify Mod Folder, Open phoni_swagify_config.json And Refer To The Instr
 
 ## Swagify - Extension Packs
 ### What Is An Extension Pack?
-An Extension Pack Allows Anyone To Expand On The Swag Portraits In This Mod Without Having To Modify The Core Swagify Mod Itself, So It Is Possible To Easily Add Swag Support To A Mod Like Iron Shell Or Scalar Tech Solutions
+An Extension For The Main Swagify Mod: You Can Easily Add Support For Making Characters In Other Mods Swag Without Editing The Main Mod's Source Code
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+### Where Do I Find Them?
+Probably In The Portrait Packs Section On The Mod Index
+</br>
+</br>
+</br>
+_(Note To Anyone Making An Extension Pack, If Posting It To The Mod Index, Please PM The Mods To Put It In The "Portrait Packs" Section, Or I Will Glare Angrily At You)_
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -160,13 +127,13 @@ _(Also For Swagify: The Swagening, Just Use The Mod Template In The Same Folder 
 </br>
 </br>
 </br>
-
-### Where Do I Find Them?
-Probably In The Portrait Packs Section On The Mod Index
 </br>
 </br>
 </br>
-_(Note To Anyone Making An Extension Pack, If Posting It To The Mod Index, Please PM The Mods To Put It In The "Portrait Packs" Section, Or I Will Glare Angrily At You)_
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
