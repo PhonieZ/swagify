@@ -1,4 +1,4 @@
-# Swagify \[Portraits Unfinished, 75% Done]
+# Swagify \[Portraits Unfinished, 81% Done]
 ![Swagify Logo](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/banner.png)
 </br>
 _"…Alviss, his portrait looks like he's, like this 35 year old depressed academic, but his dialogue sounds a lot more like a young graduate who's very fresh-faced and is really optimistic and naive…which is kind of contrasted by it \[his portrait]\: he looks a lot older and kind of depressed…so maybe we should make the portrait just look less like a 35-year-old jaded academic…"_
