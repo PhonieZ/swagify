@@ -60,7 +60,7 @@ In The Swagify Mod Folder, Open _phoni_swagify_config.json_ And Refer To The Ins
 </br>
 </br>
 
-### [_Compatibility_](#compatibility)
+### [_Compatibility_](#compatibility-1)
 ### [_Extension Packs_](#swagify---extension-packs)
 ### [_Workspace Setup_](#workspace-setup)
 ### [_Licensing And Credits_](#licensing)
