@@ -3,6 +3,7 @@ package phoni.swagify;
 import phoni.swagify.utils.json;
 
 import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.characters.PersonAPI;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,6 +44,7 @@ public class swagify_config
     public static final String CONFIG_FILE = "phoni_swagify_config.json";
 
 
+    public static PersonAPI player_object = Global.getSector().getCharacterData().getPerson();
     public static Set<String> swag_characters;
     public static boolean is_sprite_change_permanent;
 
