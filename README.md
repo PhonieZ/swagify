@@ -57,6 +57,12 @@ In The Swagify Mod Folder, Open _phoni_swagify_config.json_ And Refer To The Ins
 ### [_Starsector Forum Post_](https://fractalsoftworks.com/forum/index.php?topic=29999.0)
 ### [_Swagify Download_](https://github.com/PhonieZ/swagify/releases/download/1.0.1/Swagify_1.0.1.zip)
 ### [_Swagify: The Swagening Download_](https://github.com/PhonieZ/swagify/releases/download/1.0.0/SwagifyTheSwagening_1.0.0.zip)
+</br>
+</br>
+
+### [_Compatibility_](#compatibility)
+### [_Extension Packs_](#swagify---extension-packs)
+### [_Workspace Setup_](#workspace-setup)
 ### [_Licensing And Credits_](#licensing)
 </br>
 </br>
@@ -65,6 +71,38 @@ In The Swagify Mod Folder, Open _phoni_swagify_config.json_ And Refer To The Ins
 </br>
 
 ![Swagify Screenshots](https://raw.githubusercontent.com/PhonieZ/swagify/main/res/setup_images/screenshots.png)
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+## Compatibility
+* Swagify _Cannot_ Be Removed From An Active Game (Swagify: The Swagening _Can_ Be However)
+
+* Swagify _Can_ Be Added To An Active Game
+
+* Swagify _Doesn't_ Support Character Portraits That Change Between Saving And Loading (Could Be From A Mod Animating A Character, Or You Freshly Hiring An Officer)
+
+* Swagify _Should_ Be Compatible With Almost All Other Mods, Including Total Conversions
 </br>
 </br>
 </br>
