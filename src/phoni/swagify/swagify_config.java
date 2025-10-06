@@ -63,8 +63,6 @@ public class swagify_config
 		} 
         
 
-
-
 		catch (IOException | JSONException exception) 
         {
 			throw new RuntimeException("Failed To Load Swagify Config", exception);

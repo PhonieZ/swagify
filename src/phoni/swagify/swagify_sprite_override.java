@@ -2,16 +2,13 @@ package phoni.swagify;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.CharacterDataAPI;
+import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI.PersonDataAPI;
 import com.fs.starfarer.api.characters.AdminData;
 import com.fs.starfarer.api.characters.OfficerDataAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 
-import java.util.Dictionary;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 import phoni.swagify.utils.character;
 
@@ -167,6 +164,15 @@ public class swagify_sprite_override extends BaseModPlugin
         }
 
         character_object.setPortraitSprite(swag_character_sprite_pointer);
+
+        //Janky check to make sure character portrait has swag counterpart, otherwise throw user-readable error
+        if (swagify_config.SWAG_STRING_TARGET_PAIR.equals(string_target_pair) && !(Global.getSector().getFaction("phoni_swag").getPortraits(FullName.Gender.ANY).getItems().contains(character_object.getPortraitSprite())))
+        {
+            String insert = "";
+            if (character_object == swagify_config.player_object) {insert = "Player ";}
+
+            throw new RuntimeException("Failed To Find Swag Portrait For "+insert+"Character \""+character_object.getName().getFullName()+"\". Remove This "+insert+"Character From Swagify's Config To Stop This Error");
+        }
     }  
     
 
