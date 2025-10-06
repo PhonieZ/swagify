@@ -3,8 +3,8 @@
     "name": "Swagify",
     "author": "Phoniez",
     "description": "Swagify Introduces Swag Versions Of All The Vanilla Portraits, Alongside Having Support For Mods In The Form Of Extension Packs",
-    "version": "1.0.1",
-    "gameVersion": "0.98a-RC8",
+    "version": "1.0.2",
+    "gameVersion": "0.98a-RC7",
     "jars": ["jars/swagify.jar"],
     "modPlugin": "phoni.swagify.swagify_sprite_override"
 }
