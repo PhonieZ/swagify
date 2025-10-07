@@ -55,7 +55,7 @@ In The Swagify Mod Folder, Open _phoni_swagify_config.json_ And Refer To The Ins
 </br>
 
 ### [_Starsector Forum Post_](https://fractalsoftworks.com/forum/index.php?topic=29999.0)
-### [_Swagify Download_](https://github.com/PhonieZ/swagify/releases/download/1.0.1/Swagify_1.0.1.zip)
+### [_Swagify Download_](https://github.com/PhonieZ/swagify/releases/download/1.0.2/Swagify_1.0.2.zip)
 ### [_Swagify: The Swagening Download_](https://github.com/PhonieZ/swagify/releases/download/1.0.0/SwagifyTheSwagening_1.0.0.zip)
 </br>
 </br>
