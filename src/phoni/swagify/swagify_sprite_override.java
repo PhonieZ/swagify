@@ -111,7 +111,14 @@ public class swagify_sprite_override extends BaseModPlugin
         
         String character_sprite_pointer = character_object.getPortraitSprite();
         String swag_character_sprite_pointer;
+        
 
+        //Failsafe Incase character_sprite_pointer Null, Writes To Log For Sake Of Debugging
+        if (character_sprite_pointer == null)
+        {
+            Global.getLogger(swagify_sprite_override.class).info("character_sprite_pointer Is Null, Report This To Swagify's Developer");
+            return;
+        }
 
         //Failsafe Incase Replacement Target Isn't In Sprite Pointer
         if (!(character_sprite_pointer.contains(string_target_pair.get("target"))))

@@ -1,5 +1,6 @@
 package phoni.swagify.utils;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.characters.AdminData;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI.PersonDataAPI;
 import com.fs.starfarer.api.characters.OfficerDataAPI;
